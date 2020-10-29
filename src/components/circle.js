@@ -1,7 +1,7 @@
 // import using require
-import Shape from "./shape";
+const Shape = require('./shape');
 
-export default class Circle extends Shape{
+class Circle extends Shape{
     constructor() {
         super();
     }
@@ -12,6 +12,6 @@ export default class Circle extends Shape{
     }
 }
 // declare class
-
+module.exports = Circle;
 
 // export class using module.exports
